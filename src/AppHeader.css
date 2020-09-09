@@ -1,0 +1,10 @@
+header {
+    min-height: 72px;
+    background-color: #EA6E6E;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+  }

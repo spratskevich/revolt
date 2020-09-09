@@ -1,0 +1,61 @@
+.meetings-list {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    overflow: auto;
+  }
+  
+.meetings-list__item {
+  
+  width: 30vw;
+  height: 22vw;
+  overflow: hidden;
+}
+
+.meetings-list__item img{
+  width: inherit;
+  height: inherit;
+}
+
+.meetings-list__item a { 
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: inherit;
+  height: inherit;
+}
+
+.meetings-list__item p {
+  position: absolute;
+  margin: auto;
+  color: white;
+}
+
+.meetings-list__add-button {
+  background-color: #A47070;
+  width: 30vw;
+  height: 22vw;
+  border-color: #A47070;
+}
+
+.meetings-list__add-button > button {
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font:inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+main > div > button:focus {
+  outline: 0;
+  border-color: #A47070;
+}
+
+main > div > button:active {
+  outline: 0;
+  border-color: #A47070;
+}
