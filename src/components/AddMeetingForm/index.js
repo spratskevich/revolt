@@ -16,7 +16,7 @@ let AddMeetingForm = (props) => {
         <button type="button" onClick={props.onClick}>Отмена</button>
         
     </form>
-    )
+    );
 }
 
 export default AddMeetingForm;

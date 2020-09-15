@@ -1,17 +1,16 @@
 import React from 'react';
+import {v4 as uuidv4} from 'uuid';
+
 import './AppHeader.css';
 
-let AppHeader = (props) => {
-    console.log(props.titleList.map((item) => {return item;}));
+export default (props) => {
     return (
     <header>
         {props.titleList.map((item) =>
-        <div>
+        <div key={uuidv4()}>
             <h1>{item}</h1>
         </div>
         )}
     </header>
     );
 };
-
-export default AppHeader;

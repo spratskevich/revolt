@@ -1,36 +1,44 @@
-import React, { Fragment, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import AppHeader from './AppHeader.js';
-import MeetingsList from './MeetingsList.js'
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
-import AddMeetingForm from './AddMeetingForm.js'
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+import axios from 'axios';
 
-function App() {
+import { AppHeader, MeetingsList, AddMeetingForm } from './components';
+
+import './App.css';
+
+export default () => {
   let mainPageTitles = ['777 meetings now', '777 777 protesters'];
-  let list = ['some', 'soem', 'some', 'soem', 'some', 'soem', 'some', 'soem', 'some', 'soem'];
-  let [isAddPopupVisible, changeAddPopupVisibility] = useState(false);
-  let [meetingID, setMeetingID] = useState(null);
+  let [list, setList] = useState([]);
+  
+  let [isAddPopupVisible, setAddPopupVisibility] = useState(false);
+  let [meetingID, setMeetingID] = useState(1);
+  useEffect(() => {
+    axios
+      .get('http://localhost:3004/meetings')
+      .then(({data}) => {
+        setList(data);
+      });
+  }, []);
 
   return (
     <Router>
       <Route exact path="/">
         <div className={classNames("App", {"blockout": isAddPopupVisible})}>
           <AppHeader titleList={mainPageTitles} />
-          <MeetingsList meetings={[...list, '1'] } showPopup={() => changeAddPopupVisibility(true)} showMeeting={(id) => setMeetingID(id)} />
-          {isAddPopupVisible && <AddMeetingForm onClick={() => changeAddPopupVisibility(false)}/>}
+          <MeetingsList meetings={list}
+                        showPopup={() => setAddPopupVisibility(true)}
+                        showMeeting={(id) => setMeetingID(id)}
+          />
+          {isAddPopupVisible && <AddMeetingForm onClick={() => setAddPopupVisibility(false)}/>}
         </div>
       </Route>
       <Route path="/meeting">
         <p>{`meeting : ${meetingID}`}</p>
       </Route>
     </Router>
-    );
-  
-}
-
-export default App;
+    ); 
+};
