@@ -1,24 +1,151 @@
 {
   "meetings": [
-    { "id": 1, "title": "За все хорошее", "organizer": "good_man", "place": "good place", "start time": "10:00", "duration": "1h", "background_image":"1.jpg"},
-    { "id": 2, "title": "Против всего плохого", "organizer": "another_good_man", "place": "another good place", "start time": "11:00", "duration": "1h", "background_image":"2.jpg"},
-    { "id": 3, "title": "Итак хорошо", "organizer": "rational_man", "place": "St. Louis Park, Minnesota", "start time": "12:00", "duration": "1.5h", "background_image":"3.jpg"},
-    { "id": 4, "title": "Для тех, кому нужно 500 рублей", "organizer": "patriot", "place": "best place", "start time": "13:00", "duration": "2h", "background_image":"4.jpg"},
-    { "id": 5, "title": "Для любителей митинговать", "organizer": "enthusiast", "place": "forest", "start time": "13:00", "duration": "1h", "background_image":"5.jpg"}
+    {
+      "id": 1,
+      "title": "За все хорошее",
+      "organizer": "good_man",
+      "place": "good place",
+      "start time": "10:00",
+      "duration": "1h",
+      "background_image": "http://localhost:3004/images/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Против всего плохого",
+      "organizer": "another_good_man",
+      "place": "another good place",
+      "start time": "11:00",
+      "duration": "1h",
+      "background_image": "http://localhost:3004/images/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Итак хорошо",
+      "organizer": "rational_man",
+      "place": "St. Louis Park, Minnesota",
+      "start time": "12:00",
+      "duration": "1.5h",
+      "background_image": "http://localhost:3004/images/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Для тех, кому нужно 500 рублей",
+      "organizer": "patriot",
+      "place": "best place",
+      "start time": "13:00",
+      "duration": "2h",
+      "background_image": "http://localhost:3004/images/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Для любителей митинговать",
+      "organizer": "enthusiast",
+      "place": "forest",
+      "start time": "13:00",
+      "duration": "1h",
+      "background_image": "http://localhost:3004/images/5.jpg"
+    },
+    {
+      "title": "asdf",
+      "organizer": "asdf",
+      "place": "asdf",
+      "start time": "asdf",
+      "duration": "asdf",
+      "background_image": "blob:http://localhost:3000/3b9aed5b-0796-4d23-bc40-c75e2b37196f",
+      "id": 6
+    }
   ],
   "participants": [
-      {"id": 1, "name":"1 protester", "img":"/", "meetingID": 1}, 
-      {"id": 2, "name":"1 protester", "img":"/", "meetingID": 1}, 
-      {"id": 3, "name":"1 protester", "img":"/", "meetingID": 1}, 
-      {"id": 4, "name":"1 protester", "img":"/", "meetingID": 2}, 
-      {"id": 5, "name":"1 protester", "img":"/", "meetingID": 2}, 
-      {"id": 6, "name":"1 protester", "img":"/", "meetingID": 3}, 
-      {"id": 7, "name":"1 protester", "img":"/", "meetingID": 3}, 
-      {"id": 8, "name":"1 protester", "img":"/", "meetingID": 3}, 
-      {"id": 9, "name":"1 protester", "img":"/", "meetingID": 4}, 
-      {"id": 10, "name":"1 protester", "img":"/", "meetingID": 5},
-      {"id": 11, "name":"1 protester", "img":"/", "meetingID": 5},
-      {"id": 12, "name":"1 protester", "img":"/", "meetingID": 3},
-      {"id": 13, "name":"1 protester", "img":"/", "meetingID": 3}
+    {
+      "id": 1,
+      "name": "1 protester",
+      "img": "/",
+      "meetingID": 1
+    },
+    {
+      "id": 2,
+      "name": "2 protester",
+      "img": "/",
+      "meetingID": 1
+    },
+    {
+      "id": 3,
+      "name": "3 protester",
+      "img": "/",
+      "meetingID": 1
+    },
+    {
+      "id": 4,
+      "name": "4 protester",
+      "img": "/",
+      "meetingID": 2
+    },
+    {
+      "id": 5,
+      "name": "5 protester",
+      "img": "/",
+      "meetingID": 2
+    },
+    {
+      "id": 6,
+      "name": "6 protester",
+      "img": "/",
+      "meetingID": 3
+    },
+    {
+      "id": 7,
+      "name": "7 protester",
+      "img": "/",
+      "meetingID": 3
+    },
+    {
+      "id": 8,
+      "name": "8 protester",
+      "img": "/",
+      "meetingID": 3
+    },
+    {
+      "id": 9,
+      "name": "9 protester",
+      "img": "/",
+      "meetingID": 4
+    },
+    {
+      "id": 10,
+      "name": "10 protester",
+      "img": "/",
+      "meetingID": 5
+    },
+    {
+      "id": 11,
+      "name": "11 protester",
+      "img": "/",
+      "meetingID": 5
+    },
+    {
+      "id": 12,
+      "name": "12 protester",
+      "img": "/",
+      "meetingID": 3
+    },
+    {
+      "id": 13,
+      "name": "13 protester",
+      "img": "/",
+      "meetingID": 3
+    },
+    {
+      "id": 14,
+      "name": "14 protester",
+      "img": "/",
+      "meetingID": 3
+    },
+    {
+      "name": "asdf",
+      "password": "asdf",
+      "meetingId": 0,
+      "img": "blob:http://localhost:3000/4b54da2f-7397-42fe-b986-f6a00ade5a00",
+      "id": 15
+    }
   ]
 }

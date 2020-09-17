@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom';
 import axios from 'axios';
 
-import { AppHeader, MeetingsList, AddMeetingForm } from './components';
+import { AppHeader, MeetingsList, AddMeetingForm, MeetingRoom } from './components';
 
 import './App.css';
 
 export default () => {
-  let mainPageTitles = ['777 meetings now', '777 777 protesters'];
   let [list, setList] = useState([]);
+  let [userID, setUserID] = useState(1);
   
   let [isAddPopupVisible, setAddPopupVisibility] = useState(false);
   let [meetingID, setMeetingID] = useState(1);
@@ -22,13 +22,13 @@ export default () => {
       .then(({data}) => {
         setList(data);
       });
-  }, []);
+  },[isAddPopupVisible]);
 
   return (
     <Router>
       <Route exact path="/">
         <div className={classNames("App", {"blockout": isAddPopupVisible})}>
-          <AppHeader titleList={mainPageTitles} />
+          <AppHeader />
           <MeetingsList meetings={list}
                         showPopup={() => setAddPopupVisibility(true)}
                         showMeeting={(id) => setMeetingID(id)}
@@ -36,8 +36,8 @@ export default () => {
           {isAddPopupVisible && <AddMeetingForm onClick={() => setAddPopupVisibility(false)}/>}
         </div>
       </Route>
-      <Route path="/meeting">
-        <p>{`meeting : ${meetingID}`}</p>
+      <Route path={`/meeting`}>
+        <MeetingRoom meetingID={meetingID} userID={userID} />
       </Route>
     </Router>
     ); 

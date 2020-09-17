@@ -6,10 +6,11 @@ export default (props) => {
     return (
         <div className="meetings-list__item">
             <a href="http://localhost:3000/meeting" 
-               onClick={()=> props.showMeeting("7")}
+               onClick={() => props.redirectToMeetingRoom(props.meetingInfo.id)}
             >
                 <p>{props.meetingInfo.title}</p>
-                <img src={`http://localhost:3004/images/${props.meetingInfo.background_image}`} alt="Meeting poster"/>
+                <img src={props.meetingInfo.background_image} alt="Meeting poster"/>
+                
             </a>
         </div>    
     );

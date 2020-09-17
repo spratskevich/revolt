@@ -1,0 +1,31 @@
+.sign-up-form {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(68, 68, 68);
+    text-align: left;
+    padding: 40px 25px;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+input[type=text] {
+    
+    width: 100%;
+    margin: 8px 0px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    border: 3px solid rgb(0, 140, 255);
+}

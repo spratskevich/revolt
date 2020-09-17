@@ -1,4 +1,24 @@
-header {
+@keyframes header-gradient {
+  0% { background-image: linear-gradient(to right, #ff4f4f 0%, #EA6E6E 100%) }
+  6.25% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 6.25%, #EA6E6E 100%) }
+  12.5% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 12.5%, #EA6E6E 100%) }
+  18.75% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 18.75%, #EA6E6E 100%) }
+  25% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 25%, #EA6E6E 100%) }
+  31.25% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 31.25%, #EA6E6E 100%) }
+  37.5% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 37.5%, #EA6E6E 100%) }
+  43.75% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 43.75%, #EA6E6E 100%) }
+  50% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 50%, #EA6E6E 100%) }
+  56.25% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 56.25%, #EA6E6E 100%) }
+  62.5% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 62.5%, #EA6E6E 100%) }
+  68.75% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 68.75%, #EA6E6E 100%) }
+  75% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 75%, #EA6E6E 100%) }
+  81.25% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 81.25%, #EA6E6E 100%) }
+  87.5% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 87.5%, #EA6E6E 100%) }
+  93.75% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 93.75%, #EA6E6E 100%) }
+  100% { background-image: linear-gradient(to right, #EA6E6E 0%, #ff4f4f 100%) }
+}
+
+.header {
     min-height: 72px;
     background-color: #EA6E6E;
     font-family: 'Roboto', sans-serif;
@@ -7,4 +27,80 @@ header {
     flex-wrap: no-wrap;
     justify-content: space-around;
     align-items: center;
+    animation-name: header-gradient;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    padding-top: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .header__elem {
+    margin: 10px;
+  }
+
+  .button-container {
+    position: absolute;
+    padding-right: 20px;
+    padding-top: 20px;
+    right: -25px;;
+    top: -15px;
+  }
+
+  .button-container > img {
+    left: -100px;
+    border-radius: 15px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+  }
+
+  .log-in {
+    margin-right: 10px;
+    background-color: rgba(160, 160, 160, 0);
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    outline: none;
+  }
+
+  .log-in:hover {
+    cursor: pointer;
+  }
+
+  .sign-up {
+    margin-right: 10px;
+    background-color: rgb(160, 160, 160);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    outline: none;
+  }
+
+  .sign-up:hover {
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+  }
+
+  .sign-up:active {
+    background-color: rgb(140, 140, 140);
+  }
+
+  .blockout {
+    opacity: 0.5;
+    background-color: gray;
+    position: absolute;
+    height: 100vw;
+    width: 100vw;
   }
