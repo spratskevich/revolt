@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "title": "Итак хорошо",
+      "title": "И так хорошо",
       "organizer": "rational_man",
       "place": "St. Louis Park, Minnesota",
       "start time": "12:00",
@@ -44,108 +44,106 @@
       "start time": "13:00",
       "duration": "1h",
       "background_image": "http://localhost:3004/images/5.jpg"
-    },
-    {
-      "title": "asdf",
-      "organizer": "asdf",
-      "place": "asdf",
-      "start time": "asdf",
-      "duration": "asdf",
-      "background_image": "blob:http://localhost:3000/3b9aed5b-0796-4d23-bc40-c75e2b37196f",
-      "id": 6
     }
   ],
   "participants": [
     {
       "id": 1,
       "name": "1 protester",
-      "img": "/",
+      "password": "1 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 1
     },
     {
       "id": 2,
       "name": "2 protester",
-      "img": "/",
+      "password": "2 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 1
     },
     {
       "id": 3,
       "name": "3 protester",
-      "img": "/",
+      "password": "3 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 1
     },
     {
       "id": 4,
       "name": "4 protester",
-      "img": "/",
+      "password": "4 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 2
     },
     {
       "id": 5,
       "name": "5 protester",
-      "img": "/",
+      "password": "5 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 2
     },
     {
       "id": 6,
       "name": "6 protester",
-      "img": "/",
+      "password": "6 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 3
     },
     {
       "id": 7,
       "name": "7 protester",
-      "img": "/",
+      "password": "7 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 3
     },
     {
       "id": 8,
       "name": "8 protester",
-      "img": "/",
+      "password": "8 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 3
     },
     {
       "id": 9,
       "name": "9 protester",
-      "img": "/",
+      "password": "9 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 4
     },
     {
       "id": 10,
       "name": "10 protester",
-      "img": "/",
+      "password": "10 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 5
     },
     {
       "id": 11,
       "name": "11 protester",
-      "img": "/",
+      "password": "11 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 5
     },
     {
       "id": 12,
       "name": "12 protester",
-      "img": "/",
+      "password": "12 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 3
     },
     {
       "id": 13,
       "name": "13 protester",
-      "img": "/",
+      "password": "13 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 3
     },
     {
       "id": 14,
       "name": "14 protester",
-      "img": "/",
+      "password": "14 protester",
+      "img": "http://localhost:3004/images/user.jpg",
       "meetingID": 3
-    },
-    {
-      "name": "asdf",
-      "password": "asdf",
-      "meetingId": 0,
-      "img": "blob:http://localhost:3000/4b54da2f-7397-42fe-b986-f6a00ade5a00",
-      "id": 15
     }
   ]
 }

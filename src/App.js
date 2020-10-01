@@ -10,17 +10,17 @@ import { AppHeader, MeetingsList, AddMeetingForm, MeetingRoom } from './componen
 
 import './App.css';
 
-export default () => {
-  let [list, setList] = useState([]);
-  let [userID, setUserID] = useState(1);
+const App = () => {
+  let [meetingsList, setmeetingsList] = useState([]);
+
   
   let [isAddPopupVisible, setAddPopupVisibility] = useState(false);
-  let [meetingID, setMeetingID] = useState(1);
+  //let [meetingID, setMeetingID] = useState(1);
   useEffect(() => {
     axios
       .get('http://localhost:3004/meetings')
       .then(({data}) => {
-        setList(data);
+        setmeetingsList(data);
       });
   },[isAddPopupVisible]);
 
@@ -29,16 +29,18 @@ export default () => {
       <Route exact path="/">
         <div className={classNames("App", {"blockout": isAddPopupVisible})}>
           <AppHeader />
-          <MeetingsList meetings={list}
+          <MeetingsList meetings={meetingsList}
                         showPopup={() => setAddPopupVisibility(true)}
-                        showMeeting={(id) => setMeetingID(id)}
+                        /*showMeeting={(id) => setMeetingID(id)}*/
           />
           {isAddPopupVisible && <AddMeetingForm onClick={() => setAddPopupVisibility(false)}/>}
         </div>
       </Route>
       <Route path={`/meeting`}>
-        <MeetingRoom meetingID={meetingID} userID={userID} />
+        <MeetingRoom />
       </Route>
     </Router>
-    ); 
+    );
 };
+
+export default App;
